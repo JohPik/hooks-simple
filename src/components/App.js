@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import RessourceList from './RessourceList'
 
 const App = () => {
 
@@ -10,7 +11,7 @@ const App = () => {
           <button onClick={ () => setResource('posts') }>Posts</button>
           <button onClick={ () => setResource('todos') }>ToDos</button>
         </div>
-        {ressource}
+        <RessourceList ressource={ressource} /> 
       </div>
     )
 }
